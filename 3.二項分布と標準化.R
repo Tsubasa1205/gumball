@@ -5,7 +5,6 @@ hist(Y,probability=T,main="Y=X1+X2+X3",breaks=0:4,right=F)
 mean(Y)
 var(Y)
 
-#あいうえおかきくけお
 #(1)-2
 W=rbinom(n,100,.3)
 hist(W,probability=T,main="W=X1+X2+c+X100",breaks=10:50)
