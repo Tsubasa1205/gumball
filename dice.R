@@ -1,7 +1,7 @@
 #(1)
 n<-10
 X10<-floor(runif(n,1,7))
-write.csv(X10,"10_dice.csv")
+X10
 
 #(2)
 n<-100
@@ -13,19 +13,13 @@ mean(X100)
 var(X100)
 
 #(4)
-barX100<-sum(X100)/n
-barX100
-s2<-sum((X100-barX100)^2)/n
-s2
-
-#(5)
 fraction=6
 for (i in 1:6){
 fraction[i]<-length(X100[X100==i])/n
 }
 fraction
 
-#(6)
+#(5)
 X.fraction=6
 for (i in 1:6){
 X.fraction[i]<-(i)*fraction[i]
