@@ -18,17 +18,3 @@ for (i in 1:6){
 fraction[i]<-length(X100[X100==i])/n
 }
 fraction
-
-#(5)
-X.fraction=6
-for (i in 1:6){
-X.fraction[i]<-(i)*fraction[i]
-}
-barX_2<-sum(X.fraction)
-barX_2
-a=6
-for (i in 1:6){
-a[i]<-((i-barX_2)^2)*fraction[i]
-}
-s2_2<-sum(a)
-s2_2
